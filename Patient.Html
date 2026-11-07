@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient registration.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+    <div class="logo">
+        <span>✚</span> MediCare
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Patient Registration</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+    </ul>
+
+    <div class="nav-button">
+        <a href="#">Login</a>
+    </div>
+</nav>
+
+
+
+    <!-- Home Banner -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>Your Health, <span>Our Priority</span></h1>
+
+            <p>
+                Welcome to MediCare Patient Registration System.
+                We make patient registration simple, fast and convenient.
+                Register with us and take the first step towards better healthcare.
+            </p>
+
+            <a href="#registration" class="hero-btn">Register Now →</a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Welcome Section -->
+    <section class="welcome">
+
+        <h2>Welcome to MediCare</h2>
+
+        <p>
+            MediCare provides a simple and efficient platform
+            for managing patient information. Our system helps
+            patients register easily and access healthcare services
+            without unnecessary complications.
+        </p>
+
+    </section>
+
+
+    <!-- Registration Section -->
+    <section class="registration" id="registration">
+
+        <h2>Patient Registration</h2>
+
+        <p>Join us today and make your healthcare journey easier.</p>
+
+        <div class="registration-box">
+
+            <h3>New Patient?</h3>
+
+            <p>
+                Create your patient account by providing
+                your personal information.
+            </p>
+
+            <button onclick="registerPatient()">
+                Register Patient
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+
+        <h2>Our Services</h2>
+
+        <div class="service-container">
+
+            <div class="service-card">
+                <h3>👨‍⚕️ Patient Management</h3>
+                <p>
+                    Easily manage and maintain patient
+                    information in one place.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <h3>📅 Appointment Management</h3>
+                <p>
+                    Organize and manage patient appointments
+                    efficiently.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <h3>🏥 Healthcare Support</h3>
+                <p>
+                    Access a convenient platform designed
+                    to improve patient management.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- About Section -->
+    <section class="about" id="about">
+
+        <h2>Why Choose MediCare?</h2>
+
+        <p>
+            We focus on making patient registration and
+            information management easier through a
+            user-friendly and organized system.
+        </p>
+
+    </section>
+
+    <!-- Contact Us Section -->
+
+<section class="contact" id="contact">
+
+    <div class="contact-heading">
+        <h2>Contact Us</h2>
+        <p>Have questions? We are always ready to help you.</p>
+    </div>
+
+    <div class="contact-container">
+
+        <!-- Contact Information -->
+        <div class="contact-info">
+
+            <h3>Get In Touch</h3>
+
+            <p>Feel free to contact us for any questions or assistance.</p>
+
+            <div class="contact-item">
+                <h4>📍 Address</h4>
+                <p>MediCare Hospital, Colombo, Sri Lanka</p>
+            </div>
+
+            <div class="contact-item">
+                <h4>📞 Phone</h4>
+                <p>+94 11 234 5678</p>
+            </div>
+
+            <div class="contact-item">
+                <h4>✉ Email</h4>
+                <p>medicare@gmail.com</p>
+            </div>
+
+            <div class="contact-item">
+                <h4>🕒 Working Hours</h4>
+                <p>Monday - Saturday: 8.00 AM - 8.00 PM</p>
+            </div>
+
+        </div>
+
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+
+            <h3>Send Us a Message</h3>
+
+            <form id="contactForm">
+
+                <input type="text" id="contactName" placeholder="Your Name" required>
+
+                <input type="email" id="contactEmail" placeholder="Your Email" required>
+
+                <input type="text" id="contactSubject" placeholder="Subject" required>
+
+                <textarea id="contactMessage" placeholder="Your Message" rows="5" required></textarea>
+
+                <button type="submit">Send Message →</button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Success Alert -->
+
+<div class="success-alert" id="successAlert">
+
+    <div class="success-icon">
+        ✓
+    </div>
+
+    <h2>Message Sent!</h2>
+
+    <p>Thank you for contacting MediCare. Your message has been received successfully.
+    </p>
+
+    <button onclick="closeAlert()">OK, Great!</button>
+
+</div>
+
+<div class="alert-overlay" id="alertOverlay"></div>
+    
+</body>
+ <script src="app.js"></script>
+</html>
